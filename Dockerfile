@@ -7,4 +7,6 @@ RUN apt-get update \
  && cd /usr/local/keras \
  && python setup.py install
 WORKDIR /usr/local/keras/examples
-COPY examples/mnist_cnn.py /usr/local/keras/examples/
+COPY examples/cifar10_cnn.py \
+     examples/mnist_cnn.py \
+     /usr/local/keras/examples/
