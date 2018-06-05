@@ -23,12 +23,12 @@ save_dir = os.path.join(os.getcwd(), 'saved_models')
 model_name = 'keras_cifar10_trained_model.h5'
 
 if len(sys.argv) == 2:
-   path=sys.argv[1]
+   cdir=sys.argv[1]
 else:
-   path="/tmp/cifar-10-python.tar.gz"
+   cdir="/tmp/"
 
 # The data, split between train and test sets:
-(x_train, y_train), (x_test, y_test) = cifar10.load_data(path)
+(x_train, y_train), (x_test, y_test) = cifar10.load_data(cdir)
 print('x_train shape:', x_train.shape)
 print(x_train.shape[0], 'train samples')
 print(x_test.shape[0], 'test samples')
