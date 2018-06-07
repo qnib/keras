@@ -1,4 +1,4 @@
-FROM gcr.io/tensorflow/tensorflow:latest-gpu
+FROM tensorflow/tensorflow:latest-gpu
 
 
 RUN apt-get update \
