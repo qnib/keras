@@ -17,7 +17,7 @@ from keras import backend as K
 
 batch_size = 128
 num_classes = 10
-if len(sys.argv) == 3:
+if len(sys.argv) >= 3:
    epochs=int(sys.argv[2])
 else:
    epochs = 12
@@ -25,7 +25,7 @@ else:
 # input image dimensions
 img_rows, img_cols = 28, 28
 
-if len(sys.argv) == 2:
+if len(sys.argv) >= 2:
    basepath=sys.argv[1]
 else:
    basepath="/share/"
