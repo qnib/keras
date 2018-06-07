@@ -6,6 +6,7 @@ RUN apt-get update \
  && git clone https://github.com/keras-team/keras.git /usr/local/keras \
  && cd /usr/local/keras \
  && python setup.py install
+VOLUME ["/share"]
 WORKDIR /usr/local/keras/examples
 COPY examples/imdb_cnn.py \
      examples/mnist_cnn.py \
